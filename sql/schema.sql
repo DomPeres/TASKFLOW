@@ -50,5 +50,5 @@ CREATE TABLE tasks (
 
 INSERT INTO users (nome, email, senha_hash)
 VALUES
-    ('Ana Souza', 'ana@taskflow.com', 'hash_teste_ana'),
-    ('Bruno Lima', 'bruno@taskflow.com', 'hash_teste_bruno');
+    ('Davi Araújo', 'davi@taskflow.com', 'hash_teste_davi'),
+    ('Samuel Henrique', 'samuel@taskflow.com', 'hash_teste_davi');
