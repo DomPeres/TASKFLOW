@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../../src/helpers/response.php';
+require_once __DIR__ . '/../../src/helpers/auth.php';
 require_once __DIR__ . '/../../config/database.php';
 
 $metodo = $_SERVER['REQUEST_METHOD'];
@@ -8,6 +9,8 @@ $metodo = $_SERVER['REQUEST_METHOD'];
 if ($metodo !== 'GET') {
     json_response(false, 'Método não permitido', null, 405);
 }
+
+verificar_autenticacao();
 
 try {
 
