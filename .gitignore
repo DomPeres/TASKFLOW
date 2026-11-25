@@ -1,0 +1,8 @@
+﻿# Arquivos de configuração com senhas
+/config/database.php
+
+# Arquivo de diagnóstico
+/diagnostico.php
+
+# Configurações locais do Postman
+/.postman/
