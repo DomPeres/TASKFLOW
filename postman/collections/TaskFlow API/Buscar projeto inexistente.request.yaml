@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/projects-detail/index.php?id=99999"
+method: GET
+queryParams:
+  id: "99999"
+order: 4000

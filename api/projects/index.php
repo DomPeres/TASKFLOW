@@ -49,7 +49,7 @@ try {
         $descricao = $dados['descricao'] ?? null;
 
         if (!is_string($nome)) {
-            json_response(false, 'Nome inválido', null, 422);
+            json_response(false, 'Nome inválido', null, 400);
         }
 
         $nome = trim($nome);
@@ -62,12 +62,12 @@ try {
                 false,
                 'O nome deve ter entre 1 e 150 caracteres',
                 null,
-                422
+                400
             );
         }
 
         if ($descricao !== null && !is_string($descricao)) {
-            json_response(false, 'Descrição inválida', null, 422);
+            json_response(false, 'Descrição inválida', null, 400);
         }
 
         if ($descricao !== null) {

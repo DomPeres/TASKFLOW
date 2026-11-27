@@ -1,0 +1,13 @@
+$kind: http-request
+url: "\t{{base_url}}/api/projects/index.php"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"sucesso\": false,\r
+
+    \    \"mensagem\": \"JSON inválido\"\r
+
+    }"
+order: 3000

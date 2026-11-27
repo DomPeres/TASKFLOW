@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/api/auth/login.php"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"teste.taskflow01@email.com\",\r
+
+    \    \"senha\": \"Teste@123\"\r
+
+    }"
+order: 1000

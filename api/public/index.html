@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Gerenciamento de projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <!-- Tela de login -->
+    <section id="area-login" class="login-screen">
+        <div class="login-container">
+            <div class="brand">
+                <div class="brand-icon">T</div>
+                <span>TaskFlow</span>
+            </div>
+
+            <div class="login-heading">
+                <h1>Bem-vindo de volta</h1>
+                <p>Entre na sua conta para continuar.</p>
+            </div>
+
+            <form id="form-login">
+                <label for="login-email">E-mail</label>
+                <input
+                    type="email"
+                    id="login-email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                >
+
+                <label for="login-senha">Senha</label>
+                <input
+                    type="password"
+                    id="login-senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button type="submit">Entrar na plataforma</button>
+
+                <div id="login-mensagem" class="mensagem"></div>
+            </form>
+
+            <p class="login-footer">TaskFlow · Organização e produtividade</p>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <div id="area-projetos" class="dashboard" hidden>
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">T</div>
+                <span>TaskFlow</span>
+            </div>
+
+            <div class="sidebar-section">
+                <span class="sidebar-label">MENU PRINCIPAL</span>
+
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <span class="nav-icon">◫</span>
+                        Visão geral
+                    </a>
+
+                    <a href="#projetos-lista" class="nav-item">
+                        <span class="nav-icon">▤</span>
+                        Projetos
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-user">
+                    <div class="user-avatar">U</div>
+                    <div>
+                        <strong>Minha conta</strong>
+                        <span>Usuário conectado</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <span class="breadcrumb">Workspace / Visão geral</span>
+                </div>
+                <div class="topbar-status">
+                    <span class="status-dot"></span>
+                    Sistema conectado
+                </div>
+            </header>
+
+            <section class="page-heading">
+                <div>
+                    <span class="eyebrow">SEU ESPAÇO DE TRABALHO</span>
+                    <h1>Visão geral</h1>
+                    <p>Acompanhe e organize seus projetos em um só lugar.</p>
+                </div>
+            </section>
+
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-icon">▤</div>
+                    <span>Projetos cadastrados</span>
+                    <strong id="total-projetos">—</strong>
+                    <small>Total de projetos</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">◷</div>
+                    <span>Organização</span>
+                    <strong>TaskFlow</strong>
+                    <small>Seu espaço de trabalho</small>
+                </article>
+            </section>
+
+            <section class="projects-section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Seus projetos</h2>
+                        <p>Visualize os projetos cadastrados na plataforma.</p>
+                    </div>
+                </div>
+
+                <div id="projetos-mensagem" class="mensagem"></div>
+
+                <ul id="projetos-lista" class="projects-grid"></ul>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
